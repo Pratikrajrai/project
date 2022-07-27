@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+:root{
+    --bg:rgb(234, 241, 252);
+    --headColor:rgb(5, 33, 82);
+}
+
+
+/* herosection starts */
+.hero-section{
+ padding: 8px;
+}
+
+
+.buy-btn{
+    border-radius: 20px;
+    padding: 8px 50px;
+}
+
+.hero-section-header{
+    font-size:42px;
+    color: var(--headColor);
+}
+
+
+.hero-img-section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 0.8fr 1fr 0.7fr repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    }
+    
+    .div1 { grid-area: 1 / 6 / 4 / 9; }
+    .div2 { grid-area: 2 / 4 / 3 / 6; }
+    .div3 { grid-area: 3 / 3 / 6 / 6; }
+    .div4 { grid-area: 4 / 6 / 5 / 8; }
+
+    
+.hero-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 0.9px solid rgb(145, 172, 241);
+  
+}
+/* herosection ends */
+
+/* testimonial section */
+.testimonial-section {
+    margin-top: 120px;
+    background-color: var(--bg);
+    padding: 20px;
+}
+.textimonial-header{
+    color: var(--headColor);
+}
+.testimonial-slider{
+    display: flex;
+    justify-content: center;
+  
+
+}
+
+.testimonial{
+ 
+   padding:10px 10px;
+    width: 340px;
+    font-weight: light;
+}
+
+.clients-icon{
+    width: 50px;
+    height: 50px;
+}
+.clients-name{
+    font-size: 12px;
+
+}
+
+.testimonial small{
+    color: gray;
+    font-size: 12px;
+    
+    margin-right: 28px;
+
+}
+
+
+/* product-introduction-section starts */
+.product-introduction-section{
+    margin-top: 130px;
+}
+.product-introduction-section-header{
+    font-size:42px;
+    color: var(--headColor);
+
+}
+.product-benifits-section{
+    background-color:var(--bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 8px solid rgb(81, 168, 254);
+    height: 100%;
+    padding: 30px;
+}
+.benifits-keys{
+    list-style-type: none;
+ 
+}
+.benifits-keys li::before{
+    content: "\25AA";
+    color: rgb(29, 131, 232);
+  font-size: 27px;
+  margin-right: 8px;
+}
+/* product-introduction-section ends */
+
+
+/* subscription-container */
+
+.subscription-container{
+    margin-top: 120px;
+    background-color:var(--bg);
+    padding: 100px;
+}
+.subscription-section-header{
+    color: var(--headColor);
+}
+.subscription-input-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-box-section{
+    width: 48%;
+   
+    margin: 0 auto;
+}
+.submit-btn,.name-input,.email-input{
+    width: 100%;
+   padding: 4px;
+    border: none;
+    border: 0.3px solid black;
+    outline: none;
+
+}
+
+.submit-btn{
+font-size: 10px;
+padding: 10px ;
+}
+.invalid-message{
+font-size: 10px;
+}
+
+ .name-input::placeholder{
+    font-size: 10px;
+ }  
+ .email-input::placeholder{
+    font-size: 10px;
+ }     
+
+
+ /* media querries */
+
+@media screen and (max-width:980px){
+
+   
+    .input-box-section{
+        width: 100%;
+        margin: 0 auto;
+       
+    }
+    .subscription-container{
+        
+        padding:20px;
+    }
+
+    .hero-img-section{
+        margin-bottom: 20px;
+    }
+}
